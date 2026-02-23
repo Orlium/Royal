@@ -1,5 +1,6 @@
 import React from 'react';
 import { MapPin, Clock, Sun, Waves } from 'lucide-react';
+import { IMAGE_URLS } from '../constants';
 
 export const LocationSection: React.FC = () => {
   return (
@@ -15,7 +16,7 @@ export const LocationSection: React.FC = () => {
           {/* Map Visual Placeholder */}
           <div className="relative aspect-square md:aspect-video bg-gray-900 rounded-sm overflow-hidden border border-gray-800 group">
              <img 
-              src="/images/royal-oasis-interior.jpg" 
+              src={IMAGE_URLS.royalOasisInterior} 
               alt="Royal Oasis Location Context" 
               className="w-full h-full object-cover opacity-60 group-hover:opacity-70 transition-opacity duration-700"
              />

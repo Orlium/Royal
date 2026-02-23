@@ -1,5 +1,6 @@
 import React from 'react';
 import { Button } from './ui/Button';
+import { IMAGE_URLS } from '../constants';
 
 interface UnitProps {
   onCtaClick: () => void;
@@ -49,7 +50,7 @@ export const UnitTypesSection: React.FC<UnitProps> = ({ onCtaClick }) => {
               <div className="h-48 bg-gray-800 relative">
                  <img 
                   src={index === 0 
-                    ? "/images/royal-oasis-interior.jpg" 
+                    ? IMAGE_URLS.royalOasisInterior 
                     : `https://images.unsplash.com/photo-${index === 1 ? '1586023492125-27b2c045efd7' : '1540541338-ef6ac99801a2'}?q=80&w=1000&auto=format&fit=crop`
                   }
                   alt={unit.title}

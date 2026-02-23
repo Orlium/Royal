@@ -1,5 +1,6 @@
 import React from 'react';
 import { Button } from './ui/Button';
+import { IMAGE_URLS } from '../constants';
 
 interface HeroProps {
   onCtaClick: () => void;
@@ -11,7 +12,7 @@ export const HeroSection: React.FC<HeroProps> = ({ onCtaClick }) => {
       {/* Background */}
       <div className="absolute inset-0 z-0">
         <img 
-          src="/images/royal-oasis-exterior.jpg" 
+          src={IMAGE_URLS.royalOasisExterior} 
           alt="Royal Oasis Exterior" 
           className="w-full h-full object-cover opacity-50 scale-105 animate-slow-zoom"
         />
